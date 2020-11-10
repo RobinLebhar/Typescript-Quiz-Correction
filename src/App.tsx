@@ -104,7 +104,7 @@ export class App extends Component<Props, LocaleStateProps> {
   render() {
     return (
       <Container maxWidth="lg" >
-        {this.props.currentQuizItem && this.renderContent()}
+        {this.props.currentQuizItem ? this.renderContent() : ""}
       </Container >
     );
   }
